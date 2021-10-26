@@ -13,4 +13,4 @@ RUN useradd hubot-ran -m
 USER hubot-ran
 WORKDIR /home/hubot-ran
 COPY . /home/hubot-ran
-CMD ["sh","run.sh"]
+CMD ["sh", "run.sh"]
