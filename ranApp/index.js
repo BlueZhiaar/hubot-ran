@@ -12,8 +12,7 @@ const fileName = './listsAndItems.json';
 try {
     const data = fs.readFileSync(fileName, 'utf8');
     listsMap = new Map(JSON.parse(data));
-} catch(error) {
-    console.log(error);
+} catch(ignore) {
     console.log(fileName + 'から復元できませんでした')
 }
 
